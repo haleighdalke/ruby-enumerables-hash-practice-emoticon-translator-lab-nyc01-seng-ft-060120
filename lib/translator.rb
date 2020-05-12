@@ -2,9 +2,9 @@
 require 'yaml'
 require 'pry'
 
-def load_library
+def load_library(file_name)
   # code goes here
-  emoticons = YAML.load_file('emoticons.yml')
+  emoticons = YAML.load_file(file_name)
   emoticons.reduce({}) do |memo, (k, v)|
     v.map { |e|
       memo[k] = {

@@ -18,12 +18,11 @@ end
 def get_english_meaning(file_path, emoticon)
   # code goes here
   emoticon_hash = load_library(file_path)
-  emoticon_hash.each do |h|
-    h.find("Sorry, emoticon not found.") do |variable|
-      
-    end
+  emoticon_hash.each do |k, v|
+    if v[:japanese] == emoticon
+      return v[:english]
   end
-
+  return "Sorry, emoticon not found."
 end
 
 load_library("./lib/emoticons.yml")

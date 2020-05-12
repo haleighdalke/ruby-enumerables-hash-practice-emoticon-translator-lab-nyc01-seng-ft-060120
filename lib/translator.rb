@@ -18,6 +18,11 @@ end
 def get_english_meaning(file_path, emoticon)
   # code goes here
   emoticon_hash = load_library(file_path)
+  emoticon_hash.each do |h|
+    h.find("Sorry, emoticon not found.") do |variable|
+      
+    end
+  end
   
 end
 

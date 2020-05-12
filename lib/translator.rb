@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(file_name)
   # code goes here
-  emoticons = YAML.load_file(file_name)
+  emoticons = file_name.load_file
   emoticons.reduce({}) do |memo, (k, v)|
     v.map { |e|
       memo[k] = {

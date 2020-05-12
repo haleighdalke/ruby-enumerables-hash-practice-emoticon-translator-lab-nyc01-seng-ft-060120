@@ -28,4 +28,4 @@ def get_english_meaning(file_path, emoticon)
   return "Sorry, emoticon not found."
 end
 
-load_library("./lib/emoticons.yml")
+get_english_meaning("./lib/emoticons.yml", "(゜.゜)")

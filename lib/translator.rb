@@ -6,7 +6,7 @@ def load_library
   # code goes here
   emoticons = YAML.load_file('emoticons.yml')
   emoticons.reduce({}) do |memo, (k, v)|
-    v.map { |e|  
+    v.map { |e|
       memo[k] = {
         :english => v[0],
         :japanese => v[1]

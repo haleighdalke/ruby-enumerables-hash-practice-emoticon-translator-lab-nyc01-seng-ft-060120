@@ -8,7 +8,7 @@ def load_library
   emoticons.reduce({}) do |memo, (k, v)|
     
   end
-    
+
   end
 
 end

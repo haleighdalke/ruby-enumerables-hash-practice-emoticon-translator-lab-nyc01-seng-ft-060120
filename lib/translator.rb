@@ -25,7 +25,7 @@ def get_english_meaning(file_path, emoticon)
     end
     #binding.pry
   end
-  return "Sorry, emoticon not found."
+  return "Sorry, that emoticon was not found"
 end
 
 # get_english_meaning("./lib/emoticons.yml", "(゜.゜)")

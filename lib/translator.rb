@@ -21,6 +21,7 @@ def get_english_meaning(file_path, emoticon)
   emoticon_hash.each do |k, v|
     if v[:japanese] == emoticon
       return v[:english]
+    end
   end
   return "Sorry, emoticon not found."
 end
